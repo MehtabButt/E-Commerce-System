@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "node esbuild.config.js",
-    "build:css": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/builds/tailwind.css -c tailwind.config.js --minify"
+    "build:css": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/builds/tailwind.css -c config/tailwind.config.js --minify"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0"
