@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build --watch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "node esbuild.config.js"
+		},
+		{
+			"type": "npm",
+			"script": "build:css  --watch",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build:css",
+			"detail": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/builds/tailwind.css -c tailwind.config.js --minify"
+		}
+	]
+}
