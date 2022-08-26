@@ -5,13 +5,13 @@ categories2 = ['Watches', 'Toys', 'Food', 'Gym']
 categories3 = ['Clothes', 'Computers, Tablets and IT Accessories', 'Health & Personal Care', 'Shop Laptops & Tablets']
 
 
+categories.each do |c|
+    Category.create(name:c)
+end
+categories2.each do |c|
+    Category.create(name:c)
+end
 categories3.each do |c|
-    Category.create(name:c)
-end
-categories4.each do |c|
-    Category.create(name:c)
-end
-categories5.each do |c|
     Category.create(name:c)
 end
 
@@ -220,17 +220,17 @@ end
     )
 end
 
-(6..15).to_a.shuffle.take(4).each do |id|
-    Product.all.each do |p|
-        p.comments << Comment.new(user_id:id, review:Faker::Lorem.sentence(word_count:4))
-        p.save! 
-    end
-end
+# (6..15).to_a.shuffle.take(4).each do |id|
+#     Product.all.each do |p|
+#         p.comments << Comment.new(user_id:id, review:Faker::Lorem.sentence(word_count:4))
+#         p.save! 
+#     end
+# end
 
-Product.all.each do |p|
-    p.comments << Comment.new(user_id:3, review:Faker::Lorem.sentence(word_count:4))
-    p.save! 
-end
+# Product.all.each do |p|
+#     p.comments << Comment.new(user_id:3, review:Faker::Lorem.sentence(word_count:4))
+#     p.save! 
+# end
 
 
 
