@@ -26,7 +26,7 @@ axios.interceptors.response.use(function (response) {
     return response;
   }, function (error) {
     if (error.response.status == 401 && error.response.statusText == "Unauthorized"){
-        window.location.replace('http://localhost:3000/users/sign_in')
+        window.location.replace(`${this.$url}/users/sign_in`)
     }
     return Promise.reject(error);
   });

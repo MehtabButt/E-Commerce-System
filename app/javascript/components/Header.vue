@@ -45,7 +45,7 @@
                 axios.delete(this.$url.concat('/users/sign_out'))
                     .then(response => {
                         if(response.status == 204) {
-                            window.location.replace('http://localhost:3000')
+                            window.location.replace(`${this.$url}`)
                         }
                     })
                     .catch(
@@ -84,7 +84,7 @@
         },
         mounted: async function() {
             if (this.isSignedIn) {
-                axios.get(`http://localhost:3000/total_order_products`)
+                axios.get(`${this.$url}/total_order_products`)
                 .then((res) => {
                     console.log(res)
                     this.$cartItems = res.data 

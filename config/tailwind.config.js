@@ -3,19 +3,19 @@ module.exports = {
     enabled: true,
     preserveHtmlElements: false,
     content: [
-      '../app/helpers/**/*.rb',
-      '../app/javascript/**/*.js',
-      '../app/javascript/**/**/*.vue',
-      '../app/javascript/**/*.vue',
-      '../app/views/**/*.html.erb'
+      './app/helpers/**/*.rb',
+      './app/javascript/**/*.js',
+      './app/javascript/**/**/*.vue',
+      './app/javascript/**/*.vue',
+      './app/views/**/*.html.erb'
     ],
     darkMode: false
   },
   content: [
-    '../app/helpers/**/*.rb',
-    '../app/javascript/**/*.js',
-    '../app/javascript/**/*.vue',
-    '../app/views/**/*.html.erb'
+    './app/helpers/**/*.rb',
+    './app/javascript/**/*.js',
+    './app/javascript/**/*.vue',
+    './app/views/**/*.html.erb'
   ],
   plugins: [
     require('@tailwindcss/forms'),
